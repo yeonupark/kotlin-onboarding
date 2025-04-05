@@ -14,8 +14,7 @@ fun simplify(cryptogram: String): String {
     for (i in 1 until cryptogram.length) {
         when {
             result.lastOrNull() == cryptogram[i] -> {
-                temp = result.last()
-                result.removeLast()
+                temp = result.removeLast()
             }
 
             cryptogram[i] != temp -> {
